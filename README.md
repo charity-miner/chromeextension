@@ -1,2 +1,2 @@
-# chromeextension
+# Chrome Extension
 Charity Mine chrome Extension
