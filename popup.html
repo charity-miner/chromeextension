@@ -1,0 +1,49 @@
+<!--This HTML Document is opened when the extension button is pressed -->
+
+<!doctype html>
+<html>
+
+<head>
+  <script src="js/jquery-2.0.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+		<!-- Cascading Style Sheets -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="css/custom.css" rel="stylesheet" media="screen">
+
+  <style type="text/css">
+    body {
+      width: 350px;
+      height: 350px;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <br>
+  <img src="icon.png" width="50" height="50" />
+
+  <h3 class="display-4">Charity Mine</h3>
+
+  <p class="lead">Hashes Per Second:</p>
+  <h3 class="display-4" id="hps">0</h3>
+  <p class="lead">Total Hashes:</p>
+  <h3 class="display-4" id="th">0</h3>
+  <p class="lead">Accepted Hashes:</p>
+  <h3 class="display-4" id="ah">0</h3>
+  <br>
+  <button id="stop-start" class="btn btn-warning">Start Mining</button>
+
+  <button id="mine-on-start" class="btn btn-warning"></button>
+  <br>
+  <br>
+  <input type="number" id="charity-mine-id">
+  <br>
+  <br>
+  <script src="grabMiner.js"></script>
+</center>
+</body>
+
+</html>
