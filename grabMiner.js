@@ -54,11 +54,11 @@ document.addEventListener('DOMContentLoaded', function () {
         chrome.storage.local.get("cm_userId", function (response) {
           //  console.log(userId.value);
             if (response["cm_userId"]) {
-                console.log("first" + userId.value);
+
                 chrome.storage.local.set({ "cm_userId": userId.value }, function () { });
             }
             else {
-                console.log("second" + userId.value);
+
                 chrome.storage.local.set({ "cm_userId": "0" }, function () { });
             }
         });
@@ -73,8 +73,7 @@ chrome.storage.local.get("RunAtStart", function (response) {
 
     if (response["RunAtStart"]) {
        document.getElementById("mine-on-start").innerHTML = "Mining on Browser Start";
-    }
-    else {
+    } else {
        document.getElementById("mine-on-start").innerHTML = "Not Mining on Browser Start";
     }
 });
@@ -83,16 +82,13 @@ chrome.storage.local.get("RunAtStart", function (response) {
 
 //grabs the UserId from local and sets input value
 chrome.storage.local.get("cm_userId", function (response) {
-  var userId = document.getElementById('charity-mine-id');
-    console.log("Intial" + response["cm_userId"]);
+  
+    var userId = document.getElementById('charity-mine-id');
+
     if (response["cm_userId"]) {
-      console.log("2Second"+response["cm_userId"]);
-
       userId.value = response["cm_userId"];
-    }
-    else {
-      console.log("Last3"+response["cm_userId"]);
-
+    } else {
       userId.value = 0;
     }
+
 });
